@@ -24,15 +24,12 @@ public class Cliente {
     public String getCpf(){
         return cpf;
     }
-
     public String getNome(){
         return nome;
     }
-
     public String getTelefone(){
         return telefone;
     }
-
     public String getEmail(){
         return email;
     }
@@ -45,7 +42,6 @@ public class Cliente {
         this.cpf = cpf;
         return true;
     }
-
     public boolean SetNome(String nome){
         if(nome == null || nome.trim().isEmpty()){
             return false;
@@ -53,7 +49,6 @@ public class Cliente {
         this.nome = nome;
         return true;
     }
-
     public boolean setTelefone(String telefone){
         if(telefone == null || telefone.trim().isEmpty()){
             return false;
@@ -61,7 +56,6 @@ public class Cliente {
         this.telefone = telefone;
         return true;
     }
-
     public boolean setEmail(String email){
         if(email == null || email.trim().isEmpty()){
             return false;

@@ -46,8 +46,8 @@ public class Cliente {
         return true;
     }
 
-    public boolean setNome(String nome){
-        if (nome == null || nome.trim().isEmpty()){
+    public boolean SetNome(String nome){
+        if(nome == null || nome.trim().isEmpty()){
             return false;
         }
         this.nome = nome;
@@ -55,7 +55,7 @@ public class Cliente {
     }
 
     public boolean setTelefone(String telefone){
-        if (telefone == null || telefone.trim().isEmpty()){
+        if(telefone == null || telefone.trim().isEmpty()){
             return false;
         }
         this.telefone = telefone;
@@ -63,11 +63,11 @@ public class Cliente {
     }
 
     public boolean setEmail(String email){
-        if (email == null || email.trim().isEmpty()){
+        if(email == null || email.trim().isEmpty()){
             return false;
         }
-        this.email = email;
-        return true;
+        this.email = email; 
+        return true;      
     }
 
 }

@@ -42,7 +42,7 @@ public class Cliente {
         this.cpf = cpf;
         return true;
     }
-    public boolean SetNome(String nome){
+    public boolean setNome(String nome){
         if(nome == null || nome.trim().isEmpty()){
             return false;
         }

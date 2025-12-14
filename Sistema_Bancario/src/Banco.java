@@ -61,5 +61,11 @@ public class Banco {
             System.out.println("Falha na transferência. Verifique o saldo da conta de origem.");
         }
 
+        
+
+
     }
+    public void adicionarConta(Conta conta) {
+            contas.add(conta);
+        }
 }

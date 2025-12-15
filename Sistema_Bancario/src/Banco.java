@@ -11,22 +11,22 @@ public class Banco {
         contas = new ArrayList<>();
     }
 
-    public void buscarCliente(String cpf){
+    public Cliente buscarCliente(String cpf){
         for(Cliente cliente : clientes){
             if(cliente.getCpf().equals(cpf)){
-                System.out.println("Cliente encontrado: " + cliente.getNome());
-                return;
+                return cliente  ;
             }
         }
+        return null;
     }
 
-    public void buscarConta(int numero){
+    public Conta buscarConta(int numero, int agencia){
         for(Conta conta : contas){
-            if(conta.getNumero() == numero){
-                System.out.println("Conta encontrada: " + conta.getNumero());
-                return;
+            if(conta.getNumero() == numero && conta.getAgencia() == agencia){
+                return conta;
             }
         }
+        return null;
     }
 
     public void transferir(int numOrigem, int numDestino, double valor){
@@ -68,4 +68,8 @@ public class Banco {
     public void adicionarConta(Conta conta) {
             contas.add(conta);
         }
+    
+    public void adicionarCliente(Cliente cliente) {
+            clientes.add(cliente);
+        }   
 }

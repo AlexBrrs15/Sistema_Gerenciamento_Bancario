@@ -10,7 +10,7 @@ public Conta(Cliente cliente, int numero, int agencia, double saldo){
         this.cliente = cliente;
         this.numero = numero;
         this.agencia = agencia;
-        this.saldo = saldo;
+        this.saldo = saldo >= 0 ? saldo : 0;
     }
 
     public Cliente getCliente(){

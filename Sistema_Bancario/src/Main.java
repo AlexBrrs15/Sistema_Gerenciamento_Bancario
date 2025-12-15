@@ -14,8 +14,7 @@ public class Main {
         banco.adicionarConta(conta1);
         banco.adicionarConta(conta2);
 
-        banco.adicionarCliente(conta1.getCliente());
-        banco.adicionarCliente(conta2.getCliente());
+    
 
     
         System.out.println("O saldo do(a) "+ conta1.getCliente().getNome()+ " e " + conta1.getSaldo());

@@ -66,7 +66,15 @@ public class Banco {
 
     }
     public void adicionarConta(Conta conta) {
+            if(conta == null){
+                return;
+            }
             contas.add(conta);
+
+            Cliente clienteConta = conta.getCliente();
+            if(clienteConta != null && buscarCliente(clienteConta.getCpf()) == null){
+                clientes.add(clienteConta);
+            }
         }
     
     public void adicionarCliente(Cliente cliente) {
